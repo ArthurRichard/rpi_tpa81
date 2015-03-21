@@ -46,6 +46,7 @@ class Tpa81:
             self.tpa81temp = self.bus.read_byte_data(self.DEVICE_ADDRESS, i)
             self.tpa81data.append(self.tpa81temp)
 
+
     def getPanoramicData(self, angle):
         """
             Starts a panoramic capture of the thermal data around the sensor.
